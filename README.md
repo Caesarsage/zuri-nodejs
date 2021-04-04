@@ -8,7 +8,8 @@
 
 # TASK (b) : JSON DATE OF NAME, COUNTRY AND HOBBY CODE AND BROWSER SCREENSHOTS
 <hr>
-<img src='screenshots\zuri1bi.png' />
+<h1>The JSON Data<h1>
+<img src='screenshots\zuri1bii.png' />
 <hr><br>
 <img src='screenshots\zuri1bi.png' />
 
