@@ -1,5 +1,6 @@
 # I4G NODEJS TASK - A SIMPLE SERVER : SCREENSHOTS ARE JUST RIGHT BELOW IN ACCORDANCE TO THE TASK
-<p>For task b and c involving two or more screenshots is as a result of too many code to contain one screenshot.</p>
+<em>For task b and c involving two or more screenshots is as a result of too many code to contain one screenshot.</em>
+<h1>Kindly Click Each Picture to view a clearer version :) </h1>
 # ASSIGNED BY SIR EBUKA A. (A.K.A BUKA)
 
 # TASK (a) : PLAIN TEXT CODE AND BROWSER SCREENSHOTS
