@@ -23,25 +23,25 @@
   <li>
     <h6>cd to the directory using the code below</h6>
 
-    ```
-      cd zuri-node <br>
-    ```
+    
+      cd zuri-node 
+    
   
   </li>
   <li>
     <h6>switch to the task branch using the code below</h6>
 
-    ```
+    
     git checkout "task-2"
-    ```
+    
   
   </li>
   <li>
     <h6>Run the code using the command</h6>
   
-    ```
+    
     node app
-    ```
+    
   
   </li>
 </ol>
