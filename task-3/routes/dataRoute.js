@@ -41,13 +41,12 @@ router
       res.send(
         payload(`successfully accessed ${singleData.name} data`, singleData)
       );
+      
     } catch (error) {
-      if(error){
-        res.status(400).send(payload("Error occur!!!", error))
-      }
       if(!singleData) {
-        res.send(payload("Can not find data with that id", data));
+        res.send(payload("Can not find data with that id", singleData));
       }
+      res.send(payload("Error occur!!!", error))
     }
   })
   .put(async (req, res) => {
