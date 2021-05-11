@@ -35,16 +35,6 @@ const seedData = [
     country: "india",
   },
   {
-    name: "Destiny Caesar",
-    email: "destinyerhabor@gmail.com",
-    country: "kuwait",
-  },
-  {
-    name: "Destiny Caesar",
-    email: "destinyerhabor6@gmail.com",
-    country: "usa",
-  },
-  {
     name: "Don Caesar",
     email: "destinyerhabor6@gmail.com",
     country: "canada",
