@@ -1,8 +1,6 @@
-const bodyParser = require('body-parser');
 const express = require('express'),
       chalk = require('chalk'),
       morgan = require('morgan'),
-      Data = require('./model/dataModel'),
       router = require('./routes/dataRoute'),
       mongoose = require('mongoose');
 
@@ -14,8 +12,8 @@ mongoose.connect('mongodb://localhost:27017/crud-app',{useCreateIndex:true,useNe
   console.log(chalk.yellow('CONNECTED CORRECTLY'));
 })
 .catch(err => {
-  console.log('error occur');
-  console.log(err);
+  console.log(chalk.red('error occur'));
+  console.log(chalk.red(err));
 });
 
 // Middleware
