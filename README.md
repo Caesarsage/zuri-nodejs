@@ -1,60 +1,50 @@
-# Task 2
 ## Express CRUD App Api
+### hosted on hero 
+<a href="https://cryptic-basin-88747.herokuapp.com/">https://cryptic-basin-88747.herokuapp.com/</a>
+
 ### task by BUKA
-
+<hr />
 <p>
-  crud express application 
+  Returns json data created
 </p>
+<ul>
+<li>URL <br/>
+ <P>/</p>
+</li>
+<li>Method
+ <P>GET</p>
+</li>
+<li>URL Params
+ <P>None</p>
+</li>
+<li>Success Response
+  <li>Code: 200</li>
+  ```
 
-## How to Run locally
+  <P>{
+      "message": "Successfully created a new data",
+      "data": {
+        "_id": "609af04890d3470015e5237f",
+        "name": "madax226",
+        "email": "madax22@gmail.com",
+        "country": "Nigeria",
+        "__v": 0
+      }
+    }
+  </p>
+  ```
+</li>
 
-<ol>
-  <li>copy the code</li>
-  <li>
-    <h6>Use git clone in a terminal to clone the repo on your system as below</h6>
+<li>Error Response
+  <li>Code: 404</li>
+  ```
 
-    ```
-      git clone "https://github.com/Caesarsage/zuri-nodejs.git"
-    ```  
-
+  <P>{
+      "message": "An error occur",
+      "data": {}
+    }
+  </p>
+  ```
   </li>
-  <li>
-    <h6>cd to the directory using the code below</h6>
+</ul>
 
-    
-      cd zuri-nodejs
-    
-  
-  </li>
-  <li>
-    <h6>switch to the task branch using the code below</h6>
-
-    
-    git checkout "task-3"
-    
-  
-  </li>
-  <li>
-    <h6>cd to the directory using the code below</h6>
-
-    
-      cd task-3
-  
-  </li>
-  <li>
-    <h6>Install the packages</h6>
-
-    
-      npm install
-  
-  </li>
-  <li>
-
-    <h6>Run the code using the command</h6>
-  
-    
-    node app
-    
-  
-  </li>
-</ol>
