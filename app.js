@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== "production") {
+  require('dotenv').config();
+}
+
 const express = require('express'),
       chalk = require('chalk'),
       morgan = require('morgan'),
@@ -6,8 +10,9 @@ const express = require('express'),
 
 const app = express();
 
+const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/crud-app'
 // Creating DB
-mongoose.connect('mongodb://localhost:27017/crud-app',{useCreateIndex:true,useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect( dbUrl ,{useCreateIndex:true,useNewUrlParser: true, useUnifiedTopology: true})
 .then(()=>{
   console.log(chalk.yellow('CONNECTED CORRECTLY'));
 })

@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const chalk = require('chalk')
 const Data = require('./model/dataModel');
 
+
 // Creating DB
 mongoose.connect('mongodb://localhost:27017/crud-app',{useCreateIndex:true,useNewUrlParser: true, useUnifiedTopology: true})
 .then(()=>{

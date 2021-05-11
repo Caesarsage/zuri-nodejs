@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.1",
+    "dotenv": "^9.0.2",
     "express": "^4.17.1",
     "mongoose": "^5.10.10",
     "morgan": "^1.10.0",
