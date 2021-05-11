@@ -1,9 +1,9 @@
 const bodyParser = require('body-parser');
 const express = require('express'),
       chalk = require('chalk'),
-      morgan = require('morgan');
-const Data = require('./model/dataModel');
-const router = require('./routes/dataRoute');
+      morgan = require('morgan'),
+      Data = require('./model/dataModel'),
+      router = require('./routes/dataRoute'),
       mongoose = require('mongoose');
 
 const app = express();
@@ -19,12 +19,9 @@ mongoose.connect('mongodb://localhost:27017/crud-app',{useCreateIndex:true,useNe
 });
 
 // Middlewares
-
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(morgan('tiny'));
-
-
 
 // routes
 app.use('/', router)

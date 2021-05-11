@@ -35,6 +35,13 @@
   
   </li>
   <li>
+    <h6>cd to the directory using the code below</h6>
+
+    
+      cd task-3
+  
+  </li>
+  <li>
     <h6>Run the code using the command</h6>
   
     
