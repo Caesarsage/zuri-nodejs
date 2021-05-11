@@ -18,7 +18,7 @@ mongoose.connect('mongodb://localhost:27017/crud-app',{useCreateIndex:true,useNe
   console.log(err);
 });
 
-// Middlewares
+// Middleware
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(morgan('tiny'));
