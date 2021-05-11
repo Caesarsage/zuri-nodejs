@@ -42,6 +42,14 @@
   
   </li>
   <li>
+    <h6>Install the packages</h6>
+
+    
+      npm install
+  
+  </li>
+  <li>
+
     <h6>Run the code using the command</h6>
   
     
