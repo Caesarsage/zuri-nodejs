@@ -8,7 +8,7 @@ module.exports.showData = async (req, res) => {
     res.send(payload("Successful request", data));
   } catch (error) {
     console.log(error);
-    res.send(payload("Successful request", data));
+    res.send(payload("error", error));
   }
 };
 
@@ -63,6 +63,6 @@ module.exports.deleteData = async (req, res) => {
     const deletedData = await Data.findByIdAndDelete(id);
     res.status(200).send(payload("Data deleted successfully", deletedData));
   } catch {
-    res.status(400).send("An error occur, failed to update", error);
+    res.status(400).send("An error occur", error);
   }
 };
