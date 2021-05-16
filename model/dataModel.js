@@ -9,13 +9,15 @@ const dataSchema = new Schema({
   },
   email: {
     type: String,
-    required: true
+    required: true,
+    unique: true
   },
   country: {
     type: String,
     required: true
   },
-});
+},
+{timestamps:true});
 
 const Data= mongoose.model("Data", dataSchema);
 

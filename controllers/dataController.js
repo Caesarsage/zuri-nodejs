@@ -15,6 +15,10 @@ module.exports.showData = async (req, res) => {
 module.exports.createData = async (req, res) => {
   try {
     const { name, email, country } = req.body;
+    let user = await Data.findOne({email});
+    if (user) return res
+      .status(400)
+      .send(payload("Email already exist", []));
     const newData = new Data({
       name,
       email,
@@ -22,10 +26,10 @@ module.exports.createData = async (req, res) => {
     });
     await newData.save();
     console.log(newData);
-    res.send(payload("Successfully created a new data", newData));
+    res.status(200).send(payload("Successfully created a new data", newData));
     // res.redirect('/')
   } catch (error) {
-    res.send(payload("ouch, an error occur", error));
+    res.status(400).send(payload("ouch, an error occur", error));
   }
 };
 
@@ -33,14 +37,14 @@ module.exports.renderSingleData = async (req, res) => {
   const { id } = req.params;
   const singleData = await Data.findById(id);
   try {
-    res.send(
+    res.status(200).send(
       payload(`successfully accessed ${singleData.name} data`, singleData)
     );
   } catch (error) {
     if (!singleData) {
-      res.send(payload("Can not find data with that id", singleData));
+      res.status(401).send(payload("Can not find data with that id", singleData));
     }
-    res.send(payload("Error occur!!!", error));
+    res.status(400).send(payload("Error occur!!!", error));
   }
 };
 
