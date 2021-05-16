@@ -113,7 +113,8 @@ The app Get's the data created, Updates the data created and Deletes the data cr
   },
   email: {
     type: String,
-    required: true
+    required: true,
+    unique: true
   },
   country: {
     type: String,
@@ -147,6 +148,17 @@ The app Get's the data created, Updates the data created and Deletes the data cr
     {
       "message": "ouch, an error occur",
       "data": error
+    }
+ 
+```
+  </li>
+  
+   <ul><li>Code: 401</li></ul>
+  
+```
+    {
+      "message": "Email already exist",
+      "data": []
     }
  
 ```
